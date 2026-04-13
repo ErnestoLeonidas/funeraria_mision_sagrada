@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funeraria Misión Sagrada — Servicios Funerarios en San Bernardo | 24 Horas</title>
+<meta name="description" content="Funeraria en San Bernardo con atención inmediata las 24 horas. Traslado, velatorio, trámites y acompañamiento profesional para tu familia. Llámanos ahora.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1B2A4A">
+<link rel="canonical" href="https://funerariamisionsagrada.cl/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FuneralHome",
+  "name":"Funeraria Misión Sagrada",
+  "image":"",
+  "telephone":"+56912345678",
+  "url":"https://funerariamisionsagrada.cl",
+  "address":{"@type":"PostalAddress","streetAddress":"","addressLocality":"San Bernardo","addressRegion":"Región Metropolitana","addressCountry":"CL"},
+  "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},
+  "areaServed":["San Bernardo","Buin","Paine","Calera de Tango","Lo Espejo","El Bosque","Nos"]
+}
+</script>
+<!-- Schema.org FAQPage -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"¿Qué debo hacer si un familiar acaba de fallecer?","acceptedAnswer":{"@type":"Answer","text":"Lo primero es comunicarte con nosotros. Nuestro equipo te orientará sobre los pasos a seguir y coordinará el traslado y todos los servicios necesarios. Estamos disponibles las 24 horas."}},
+    {"@type":"Question","name":"¿Qué documentos necesito?","acceptedAnswer":{"@type":"Answer","text":"Generalmente necesitarás la cédula de identidad del fallecido(a) y el certificado médico de defunción. Si no los tienes disponibles, te ayudamos a gestionarlos."}},
+    {"@type":"Question","name":"¿Atienden fuera de San Bernardo?","acceptedAnswer":{"@type":"Answer","text":"Sí. Además de San Bernardo, cubrimos Buin, Paine, Calera de Tango y otras comunas cercanas. Contáctanos y confirmamos cobertura en tu zona."}},
+    {"@type":"Question","name":"¿Tienen disponibilidad inmediata?","acceptedAnswer":{"@type":"Answer","text":"Sí. Atendemos las 24 horas del día, los 7 días de la semana, incluyendo fines de semana y festivos."}},
+    {"@type":"Question","name":"¿Cuánto cuesta el servicio funerario?","acceptedAnswer":{"@type":"Answer","text":"El costo varía según el tipo de servicio y las necesidades de cada familia. Contáctanos para una orientación personalizada y sin compromiso."}}
+  ]
+}
+</script>
+
+<style>
+/* ══════════════════════════════════════════
+   VARIABLES & RESET
+   ══════════════════════════════════════════ */
+:root {
+  --navy: #1B2A4A;
+  --navy-deep: #0f1a2e;
+  --navy-mid: #243558;
+  --gold: #C8A96E;
+  --gold-light: #D9C08A;
+  --gold-pale: rgba(200,169,110,0.08);
+  --bg: #FAF8F5;
+  --bg-alt: #F0EDE8;
+  --bg-warm: #F5F1EB;
+  --text: #2D2D2D;
+  --text-mid: #5A5A5A;
+  --text-light: #7A7A7A;
+  --white: #FFFFFF;
+  --border: #E5E0D8;
+  --green: #25D366;
+  --blue-action: #2563EB;
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.04);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.07);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.1);
+  --radius: 14px;
+  --radius-sm: 8px;
+  --radius-xs: 6px;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --max-w: 1180px;
+  --header-h: 72px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-body); color: var(--text); background: var(--bg);
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+ul { list-style: none; }
+
+/* ══════════════════════════════════════════
+   UTILITIES
+   ══════════════════════════════════════════ */
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0; transform: translateY(36px);
+  transition: opacity 0.8s cubic-bezier(.22,1,.36,1), transform 0.8s cubic-bezier(.22,1,.36,1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+.reveal-d4 { transition-delay: 0.35s; }
+.reveal-d5 { transition-delay: 0.4s; }
+
+/* ══════════════════════════════════════════
+   SECTION PRIMITIVES
+   ══════════════════════════════════════════ */
+.section-label {
+  display: inline-block; font-size: 0.72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2.5px; color: var(--gold);
+  margin-bottom: 14px;
+}
+.section-title {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(1.9rem, 4vw, 2.7rem); color: var(--navy);
+  line-height: 1.15; margin-bottom: 16px;
+}
+.section-desc {
+  font-size: 1.05rem; color: var(--text-mid); line-height: 1.75;
+  max-width: 600px; font-weight: 300;
+}
+.section-pad { padding: 100px 0; }
+
+/* ══════════════════════════════════════════
+   BUTTONS
+   ══════════════════════════════════════════ */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 15px 30px; border-radius: var(--radius-sm);
+  font-weight: 600; font-size: 0.95rem; border: none;
+  transition: all 0.3s cubic-bezier(.22,1,.36,1);
+  white-space: nowrap; line-height: 1;
+}
+.btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+.btn-gold { background: var(--gold); color: var(--navy); }
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(200,169,110,0.35); }
+.btn-wa { background: rgba(37,211,102,0.12); color: var(--green); border: 1px solid rgba(37,211,102,0.25); }
+.btn-wa:hover { background: rgba(37,211,102,0.22); transform: translateY(-2px); }
+.btn-navy { background: var(--navy); color: var(--white); }
+.btn-navy:hover { background: var(--navy-mid); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(27,42,74,0.25); }
+.btn-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--border); }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   HEADER
+   ══════════════════════════════════════════ */
+.header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: var(--header-h); transition: all 0.35s ease;
+}
+.header.scrolled {
+  background: rgba(255,255,255,0.96); backdrop-filter: blur(16px);
+  box-shadow: 0 1px 0 var(--border);
+}
+.header-inner {
+  max-width: var(--max-w); margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 100%;
+}
+.logo {
+  font-family: var(--font-display); font-size: 1.35rem; font-weight: 700;
+  color: var(--white); transition: color 0.35s;
+}
+.header.scrolled .logo { color: var(--navy); }
+.logo em { font-style: italic; color: var(--gold); }
+.nav { display: flex; align-items: center; gap: 32px; }
+.nav-link {
+  font-size: 0.88rem; font-weight: 500; color: rgba(255,255,255,0.75);
+  transition: color 0.25s; position: relative;
+}
+.nav-link::after {
+  content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1.5px;
+  background: var(--gold); transition: width 0.3s;
+}
+.nav-link:hover { color: var(--white); }
+.nav-link:hover::after { width: 100%; }
+.header.scrolled .nav-link { color: var(--text-mid); }
+.header.scrolled .nav-link:hover { color: var(--navy); }
+.nav-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 22px; border-radius: 100px;
+  background: var(--gold); color: var(--navy);
+  font-size: 0.85rem; font-weight: 600; transition: all 0.25s;
+}
+.nav-cta:hover { background: var(--gold-light); }
+.nav-cta svg { width: 15px; height: 15px; }
+.menu-btn {
+  display: none; background: none; border: none;
+  color: var(--white); padding: 4px; transition: color 0.35s;
+}
+.header.scrolled .menu-btn { color: var(--navy); }
+
+/* ── Mobile overlay ── */
+.mobile-nav {
+  position: fixed; inset: 0; z-index: 150;
+  background: var(--navy-deep); display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 28px;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.mobile-nav.open { opacity: 1; pointer-events: all; }
+.mobile-nav a {
+  font-family: var(--font-display); font-size: 1.6rem; color: var(--white);
+  transition: color 0.2s; font-weight: 600;
+}
+.mobile-nav a:hover { color: var(--gold); }
+.mobile-close {
+  position: absolute; top: 20px; right: 24px; background: none; border: none;
+  color: rgba(255,255,255,0.6); font-size: 2.2rem; line-height: 1;
+}
+
+/* ══════════════════════════════════════════
+   HERO
+   ══════════════════════════════════════════ */
+.hero {
+  position: relative; min-height: 100vh; min-height: 100dvh;
+  display: flex; align-items: center;
+  background: linear-gradient(170deg, var(--navy-deep) 0%, var(--navy) 50%, #2a3d62 100%);
+  overflow: hidden;
+}
+/* Subtle grain texture */
+.hero::before {
+  content: ''; position: absolute; inset: 0; opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-size: 256px;
+}
+/* Decorative radial glows */
+.hero::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 600px 400px at 65% 25%, rgba(200,169,110,0.07), transparent),
+    radial-gradient(ellipse 500px 500px at 15% 85%, rgba(200,169,110,0.04), transparent);
+}
+/* Bottom fade to page bg */
+.hero-fade {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 140px;
+  background: linear-gradient(to top, var(--bg), transparent); z-index: 2;
+}
+/* Decorative thin gold line */
+.hero-line {
+  position: absolute; top: 0; right: 12%; width: 1px; height: 40%;
+  background: linear-gradient(to bottom, transparent, rgba(200,169,110,0.15), transparent);
+}
+
+.hero-content {
+  position: relative; z-index: 3;
+  padding: 140px 0 120px; max-width: 720px;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 9px 20px; border-radius: 100px;
+  background: rgba(200,169,110,0.1); border: 1px solid rgba(200,169,110,0.2);
+  font-size: 0.8rem; color: var(--gold-light); font-weight: 500;
+  margin-bottom: 36px;
+  animation: fadeInDown 0.8s 0.2s both;
+}
+@keyframes fadeInDown { from { opacity:0; transform:translateY(-12px); } to { opacity:1; transform:translateY(0); } }
+.pulse-dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--green);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(1.5)} }
+
+.hero h1 {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem); color: var(--white);
+  line-height: 1.1; margin-bottom: 22px;
+  animation: fadeInUp 0.8s 0.35s both;
+}
+@keyframes fadeInUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+.hero h1 .accent { color: var(--gold); }
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255,255,255,0.6);
+  line-height: 1.75; margin-bottom: 38px; font-weight: 300;
+  animation: fadeInUp 0.8s 0.5s both;
+}
+.hero-buttons {
+  display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 44px;
+  animation: fadeInUp 0.8s 0.65s both;
+}
+.hero-tags {
+  display: flex; gap: 20px; flex-wrap: wrap;
+  font-size: 0.85rem; color: rgba(255,255,255,0.35); font-weight: 400;
+  animation: fadeInUp 0.8s 0.8s both;
+}
+.hero-tags span { display: flex; align-items: center; gap: 7px; }
+.hero-tags span::before {
+  content: ''; width: 4px; height: 4px; border-radius: 50%;
+  background: var(--gold); opacity: 0.6;
+}
+
+/* ══════════════════════════════════════════
+   TRUST BAR
+   ══════════════════════════════════════════ */
+.trust-bar {
+  position: relative; z-index: 5; margin-top: -52px; padding: 0 24px;
+}
+.trust-inner {
+  max-width: var(--max-w); margin: 0 auto;
+  background: var(--white); border-radius: var(--radius);
+  padding: 30px 36px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+  box-shadow: var(--shadow-lg);
+}
+.trust-item { display: flex; align-items: center; gap: 14px; }
+.trust-icon {
+  width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0;
+  background: var(--gold-pale); display: flex; align-items: center; justify-content: center;
+  color: var(--gold);
+}
+.trust-icon svg { width: 20px; height: 20px; }
+.trust-label { font-weight: 700; font-size: 0.92rem; color: var(--navy); line-height: 1.25; }
+.trust-sub { font-size: 0.78rem; color: var(--text-light); margin-top: 2px; font-weight: 400; }
+
+/* ══════════════════════════════════════════
+   SERVICES
+   ══════════════════════════════════════════ */
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 52px;
+}
+.service-card {
+  background: var(--white); border-radius: var(--radius); padding: 32px 28px;
+  border: 1px solid var(--border); transition: all 0.35s ease; position: relative;
+  overflow: hidden;
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gold); transform: scaleX(0); transform-origin: left;
+  transition: transform 0.4s cubic-bezier(.22,1,.36,1);
+}
+.service-card:hover { border-color: rgba(200,169,110,0.3); transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.service-card:hover::before { transform: scaleX(1); }
+.svc-icon {
+  width: 52px; height: 52px; border-radius: 12px;
+  background: linear-gradient(135deg, rgba(200,169,110,0.12), rgba(200,169,110,0.03));
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); margin-bottom: 20px;
+}
+.svc-icon svg { width: 24px; height: 24px; }
+.service-card h3 {
+  font-family: var(--font-display); font-size: 1.2rem; font-weight: 600;
+  color: var(--navy); margin-bottom: 10px;
+}
+.service-card p { font-size: 0.9rem; color: var(--text-mid); line-height: 1.65; font-weight: 300; }
+
+/* ══════════════════════════════════════════
+   STEPS (Qué hacer)
+   ══════════════════════════════════════════ */
+.bg-alt { background: var(--bg-alt); }
+.steps-list { margin-top: 52px; }
+.step-item {
+  display: flex; gap: 28px; padding: 30px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  position: relative;
+}
+.step-num {
+  font-family: var(--font-display); font-size: 2.8rem; font-weight: 700;
+  color: var(--gold); opacity: 0.25; line-height: 1; flex-shrink: 0; width: 60px;
+}
+.step-body h3 {
+  font-family: var(--font-display); font-size: 1.2rem; font-weight: 600;
+  color: var(--navy); margin-bottom: 8px;
+}
+.step-body p { font-size: 0.93rem; color: var(--text-mid); line-height: 1.65; font-weight: 300; }
+.steps-cta { margin-top: 44px; }
+
+/* ══════════════════════════════════════════
+   DIFFERENTIATORS
+   ══════════════════════════════════════════ */
+.diff-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px 32px; margin-top: 52px;
+}
+.diff-item { display: flex; gap: 14px; }
+.diff-check {
+  width: 28px; height: 28px; flex-shrink: 0; margin-top: 1px;
+  color: var(--gold); opacity: 0.7;
+}
+.diff-check svg { width: 20px; height: 20px; }
+.diff-item h4 { font-size: 0.98rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+.diff-item p { font-size: 0.88rem; color: var(--text-mid); line-height: 1.6; font-weight: 300; }
+
+/* ══════════════════════════════════════════
+   COVERAGE
+   ══════════════════════════════════════════ */
+.coverage-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; margin-top: 48px;
+}
+.coverage-map {
+  aspect-ratio: 5/4; border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--border); position: relative;
+  background: var(--bg-warm);
+}
+.coverage-map iframe { width: 100%; height: 100%; border: 0; }
+.coverage-map-placeholder {
+  width: 100%; height: 100%; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 12px;
+  color: var(--text-light); font-size: 0.85rem;
+}
+.coverage-map-placeholder svg { width: 32px; height: 32px; opacity: 0.3; }
+.tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 16px; background: var(--gold-pale); border: 1px solid rgba(200,169,110,0.12);
+  border-radius: 100px; font-size: 0.85rem; color: var(--navy); font-weight: 500;
+}
+.tag svg { width: 14px; height: 14px; color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   TESTIMONIALS
+   ══════════════════════════════════════════ */
+.testimonials-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 52px;
+}
+.testimonial-card {
+  background: var(--white); border-radius: var(--radius); padding: 32px;
+  border: 1px solid var(--border); position: relative;
+}
+.testimonial-card::before {
+  content: '"'; position: absolute; top: 20px; right: 24px;
+  font-family: var(--font-display); font-size: 4rem; color: var(--gold); opacity: 0.12;
+  line-height: 1;
+}
+.stars { display: flex; gap: 2px; margin-bottom: 18px; color: var(--gold); }
+.stars svg { width: 15px; height: 15px; }
+.testimonial-text {
+  font-size: 0.93rem; color: var(--text); line-height: 1.7; font-weight: 300;
+  font-style: italic; margin-bottom: 22px;
+}
+.testimonial-author { font-weight: 700; font-size: 0.88rem; color: var(--navy); }
+.testimonial-loc { font-size: 0.78rem; color: var(--text-light); margin-top: 3px; }
+
+/* ══════════════════════════════════════════
+   ABOUT
+   ══════════════════════════════════════════ */
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+}
+.about-visual {
+  aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden;
+  background: linear-gradient(135deg, var(--navy), var(--navy-mid));
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.about-visual::after {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 30% 70%, rgba(200,169,110,0.08), transparent 60%);
+}
+.about-visual-text {
+  font-family: var(--font-display); font-size: 1.6rem; font-weight: 600;
+  color: var(--gold); opacity: 0.35; text-align: center; z-index: 1; line-height: 1.3;
+}
+.about-body p {
+  font-size: 1rem; color: var(--text-mid); line-height: 1.8; font-weight: 300;
+  margin-bottom: 18px;
+}
+
+/* ══════════════════════════════════════════
+   FAQ
+   ══════════════════════════════════════════ */
+.faq-wrapper { max-width: 740px; margin: 52px auto 0; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-btn {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  padding: 22px 0; background: none; border: none;
+  font-family: var(--font-body); font-size: 1rem; font-weight: 600;
+  color: var(--text); text-align: left; gap: 16px; cursor: pointer;
+  transition: color 0.2s;
+}
+.faq-btn:hover { color: var(--navy); }
+.faq-chevron {
+  flex-shrink: 0; width: 20px; height: 20px; color: var(--gold);
+  transition: transform 0.35s cubic-bezier(.22,1,.36,1);
+}
+.faq-item.open .faq-chevron { transform: rotate(180deg); }
+.faq-answer {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(.22,1,.36,1), padding-bottom 0.3s;
+}
+.faq-item.open .faq-answer { max-height: 260px; padding-bottom: 22px; }
+.faq-answer p {
+  font-size: 0.95rem; color: var(--text-mid); line-height: 1.7; font-weight: 300;
+}
+
+/* ══════════════════════════════════════════
+   CONTACT
+   ══════════════════════════════════════════ */
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 48px;
+}
+.form-group { margin-bottom: 20px; }
+.form-label {
+  display: block; font-size: 0.85rem; font-weight: 600;
+  color: var(--navy); margin-bottom: 8px;
+}
+.form-input, .form-select, .form-textarea {
+  width: 100%; padding: 14px 16px; border: 1px solid var(--border);
+  border-radius: var(--radius-sm); font-family: var(--font-body);
+  font-size: 0.93rem; color: var(--text); background: var(--white);
+  transition: border-color 0.25s, box-shadow 0.25s; outline: none;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--gold); box-shadow: 0 0 0 3px rgba(200,169,110,0.1);
+}
+.form-textarea { resize: vertical; min-height: 90px; }
+.form-note { font-size: 0.8rem; color: var(--text-light); margin-top: 12px; text-align: center; }
+.form-success {
+  padding: 20px; background: rgba(37,211,102,0.08); border: 1px solid rgba(37,211,102,0.2);
+  border-radius: var(--radius-sm); color: #1a7a3a; font-weight: 600; text-align: center;
+  font-size: 0.95rem;
+}
+
+.contact-info { display: flex; flex-direction: column; gap: 28px; padding-top: 8px; }
+.contact-row { display: flex; gap: 16px; align-items: flex-start; }
+.contact-icon {
+  width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0;
+  background: var(--gold-pale); display: flex; align-items: center; justify-content: center;
+  color: var(--gold);
+}
+.contact-icon svg { width: 20px; height: 20px; }
+.contact-label-text { font-weight: 700; color: var(--navy); font-size: 0.93rem; }
+.contact-value { color: var(--text-mid); font-size: 0.9rem; margin-top: 4px; font-weight: 300; }
+.contact-value a { color: var(--navy); font-weight: 500; }
+.contact-value a:hover { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   EMERGENCY CTA BANNER
+   ══════════════════════════════════════════ */
+.cta-banner {
+  background: var(--navy); padding: 56px 0; text-align: center;
+}
+.cta-banner h2 {
+  font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--white); font-weight: 600; margin-bottom: 12px;
+}
+.cta-banner p { color: rgba(255,255,255,0.6); font-size: 1rem; margin-bottom: 28px; font-weight: 300; }
+.cta-banner-buttons { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+/* ══════════════════════════════════════════
+   FOOTER
+   ══════════════════════════════════════════ */
+.footer { background: var(--navy-deep); color: rgba(255,255,255,0.6); padding: 64px 0 32px; }
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+  margin-bottom: 48px;
+}
+.footer-brand {
+  font-family: var(--font-display); font-size: 1.35rem; font-weight: 700;
+  color: var(--white); margin-bottom: 14px;
+}
+.footer-brand em { color: var(--gold); font-style: italic; }
+.footer-desc { font-size: 0.88rem; line-height: 1.65; max-width: 300px; font-weight: 300; }
+.footer-title {
+  font-weight: 700; color: var(--white); font-size: 0.78rem;
+  text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px;
+}
+.footer-link {
+  display: block; font-size: 0.88rem; color: rgba(255,255,255,0.5);
+  margin-bottom: 11px; transition: color 0.2s; font-weight: 300;
+}
+.footer-link:hover { color: var(--gold); }
+.footer-bar {
+  border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px;
+  text-align: center; font-size: 0.8rem; font-weight: 300;
+}
+
+/* ══════════════════════════════════════════
+   FLOATING MOBILE BAR
+   ══════════════════════════════════════════ */
+.mobile-bar {
+  display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+  background: var(--white); border-top: 1px solid var(--border);
+  padding: 10px 14px; gap: 10px;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.08);
+}
+.mobile-bar a {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 12px; border-radius: var(--radius-sm);
+  font-weight: 700; font-size: 0.88rem;
+}
+.mobile-bar a svg { width: 18px; height: 18px; }
+.mb-call { background: var(--navy); color: var(--white); }
+.mb-wa { background: var(--green); color: var(--white); }
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════ */
+@media (max-width: 960px) {
+  .nav { display: none; }
+  .menu-btn { display: block; }
+  .trust-inner { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .diff-grid { grid-template-columns: 1fr 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .coverage-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .mobile-bar { display: flex; }
+  .section-pad { padding: 72px 0; }
+  .footer { padding-bottom: 100px; }
+}
+@media (max-width: 600px) {
+  .trust-inner { grid-template-columns: 1fr; padding: 24px 20px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .diff-grid { grid-template-columns: 1fr; }
+  .hero-buttons { flex-direction: column; }
+  .hero-buttons .btn { width: 100%; justify-content: center; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .step-item { gap: 18px; }
+  .step-num { font-size: 2rem; width: 44px; }
+  .cta-banner-buttons { flex-direction: column; align-items: center; }
+  .cta-banner-buttons .btn { width: 100%; max-width: 320px; justify-content: center; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ════════════════ HEADER ════════════════ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo">Misión <em>Sagrada</em></a>
+    <nav class="nav">
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#pasos" class="nav-link">Qué hacer</a>
+      <a href="#nosotros" class="nav-link">Nosotros</a>
+      <a href="#faq" class="nav-link">Preguntas</a>
+      <a href="tel:+56912345678" class="nav-cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Llamar ahora
+      </a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ── Mobile Nav ── -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose" aria-label="Cerrar menú">&times;</button>
+  <a href="#servicios" class="mobile-nav-link">Servicios</a>
+  <a href="#pasos" class="mobile-nav-link">Qué hacer</a>
+  <a href="#nosotros" class="mobile-nav-link">Nosotros</a>
+  <a href="#faq" class="mobile-nav-link">Preguntas</a>
+  <a href="#contacto" class="mobile-nav-link">Contacto</a>
+  <a href="tel:+56912345678" style="color:var(--gold);margin-top:12px">Llamar ahora</a>
+</div>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section class="hero" id="inicio">
+  <div class="hero-fade"></div>
+  <div class="hero-line"></div>
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      Disponibles 24/7 · San Bernardo y alrededores
+    </div>
+    <h1>Estamos contigo.<br><span class="accent">Atención funeraria inmediata</span> en San Bernardo.</h1>
+    <p class="hero-sub">Acompañamos a tu familia con respeto, claridad y dedicación. Llámanos y nos encargamos de todo lo necesario.</p>
+    <div class="hero-buttons">
+      <a href="tel:+56912345678" class="btn btn-gold">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Llámanos ahora
+      </a>
+      <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20orientaci%C3%B3n%20sobre%20servicios%20funerarios." target="_blank" rel="noopener" class="btn btn-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        Escríbenos por WhatsApp
+      </a>
+    </div>
+    <div class="hero-tags">
+      <span>Traslado</span>
+      <span>Velatorio</span>
+      <span>Trámites</span>
+      <span>Acompañamiento</span>
+      <span>Cremación</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TRUST BAR ════════════════ -->
+<div class="trust-bar">
+  <div class="trust-inner reveal">
+    <div class="trust-item">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div><div class="trust-label">+15 años de servicio</div><div class="trust-sub">Al servicio de las familias</div></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <div><div class="trust-label">Miles de familias</div><div class="trust-sub">Acompañadas con dedicación</div></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div><div class="trust-label">Disponibles 24 horas</div><div class="trust-sub">Los 365 días del año</div></div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div><div class="trust-label">San Bernardo</div><div class="trust-sub">Y comunas aledañas</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════ SERVICIOS ════════════════ -->
+<section class="section-pad" id="servicios">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Servicios</div>
+      <h2 class="section-title">Servicios funerarios con dedicación y respeto</h2>
+      <p class="section-desc">Nos encargamos de cada detalle para que tú y tu familia puedan enfocarse en lo que realmente importa.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal reveal-d1">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3>Traslado del fallecido(a)</h3>
+        <p>Nos encargamos del traslado desde el lugar del fallecimiento hasta el velatorio y al cementerio, con total cuidado y respeto.</p>
+      </div>
+
+      <div class="service-card reveal reveal-d2">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Coordinación de velatorio</h3>
+        <p>Organizamos el velatorio para que la familia pueda despedirse con tranquilidad, sin preocuparse por la logística.</p>
+      </div>
+
+      <div class="service-card reveal reveal-d3">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Apoyo en trámites legales</h3>
+        <p>Orientamos y acompañamos en la gestión de certificados, inscripciones y toda la documentación necesaria.</p>
+      </div>
+
+      <div class="service-card reveal reveal-d1">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a1 1 0 0 0-.9.55l-1.92 3.86A1.07 1.07 0 0 0 2 12v4h3"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg>
+        </div>
+        <h3>Vehículo de acompañamiento</h3>
+        <p>Disponemos de vehículo para que familiares cercanos acompañen el cortejo hasta el lugar de destino.</p>
+      </div>
+
+      <div class="service-card reveal reveal-d2">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+        </div>
+        <h3>Cremación y cementerio</h3>
+        <p>Coordinamos con crematorios y cementerios según las necesidades y decisiones de la familia.</p>
+      </div>
+
+      <div class="service-card reveal reveal-d3">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <h3>Orientación y contención</h3>
+        <p>Desde el primer llamado, orientamos sobre cada paso a seguir, resolviendo dudas y brindando contención humana.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ QUÉ HACER ════════════════ -->
+<section class="section-pad bg-alt" id="pasos">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Orientación</div>
+      <h2 class="section-title">¿Qué hacer ante el fallecimiento de un ser querido?</h2>
+      <p class="section-desc">Sabemos que es un momento difícil. Aquí te orientamos paso a paso para que sepas cómo proceder.</p>
+    </div>
+    <div class="steps-list">
+      <div class="step-item reveal">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3>Comunícate con nosotros</h3>
+          <p>Llámanos a cualquier hora. Te orientamos y coordinamos todo lo necesario. No necesitas tener nada resuelto; nosotros te guiamos.</p>
+        </div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3>Ten a mano los documentos básicos</h3>
+          <p>Cédula de identidad del fallecido(a) y certificado médico de defunción, si está disponible. Si no los tienes, te ayudamos a gestionarlos.</p>
+        </div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3>Nos encargamos del traslado</h3>
+          <p>Coordinamos el retiro y traslado del fallecido(a) con dignidad al lugar del velatorio.</p>
+        </div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h3>Coordinamos velatorio y trámites</h3>
+          <p>Organizamos el lugar del velatorio, gestionamos documentación ante el Registro Civil y coordinamos con cementerio o crematorio.</p>
+        </div>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <h3>Acompañamos todo el proceso</h3>
+          <p>Nuestro compromiso es que no estés solo(a). Te acompañamos desde el primer momento hasta que todo esté resuelto.</p>
+        </div>
+      </div>
+    </div>
+    <div class="steps-cta reveal">
+      <a href="tel:+56912345678" class="btn btn-gold">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Llámanos y te orientamos paso a paso
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ POR QUÉ ELEGIRNOS ════════════════ -->
+<section class="section-pad" id="diferenciadores">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">¿Por qué elegirnos?</div>
+      <h2 class="section-title">Por qué confiar en Funeraria Misión Sagrada</h2>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-item reveal reveal-d1">
+        <div class="diff-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h4>Vocación de servicio real</h4><p>No nacimos como un negocio; nacimos para servir a las familias de nuestra comunidad.</p></div>
+      </div>
+      <div class="diff-item reveal reveal-d2">
+        <div class="diff-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h4>Atención inmediata</h4><p>Respondemos al primer llamado, las 24 horas del día, los 365 días del año.</p></div>
+      </div>
+      <div class="diff-item reveal reveal-d3">
+        <div class="diff-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h4>Acompañamiento completo</h4><p>Desde el traslado hasta los trámites, nos encargamos de todo para que tú te concentres en lo importante.</p></div>
+      </div>
+      <div class="diff-item reveal reveal-d1">
+        <div class="diff-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h4>Transparencia total</h4><p>Te explicamos cada paso y cada servicio con claridad, sin costos ocultos ni sorpresas.</p></div>
+      </div>
+      <div class="diff-item reveal reveal-d2">
+        <div class="diff-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h4>Cercanía local</h4><p>Estamos en San Bernardo y conocemos la comunidad. No somos una empresa lejana; somos tus vecinos.</p></div>
+      </div>
+      <div class="diff-item reveal reveal-d3">
+        <div class="diff-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+        <div><h4>Trato humano</h4><p>Cada familia es tratada con dignidad, respeto y empatía, siempre.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ COBERTURA ════════════════ -->
+<section class="section-pad bg-alt" id="cobertura">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Cobertura</div>
+      <h2 class="section-title">Cobertura en San Bernardo y alrededores</h2>
+    </div>
+    <div class="coverage-grid">
+      <div class="reveal">
+        <p class="section-desc" style="max-width:none">Nuestra sede se encuentra en San Bernardo, Región Metropolitana, y brindamos atención en diversas comunas cercanas. Si estás en otra zona, contáctanos y revisamos cómo podemos ayudarte.</p>
+        <div class="tags">
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>San Bernardo</span>
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Buin</span>
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Paine</span>
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Calera de Tango</span>
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Nos</span>
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lo Espejo</span>
+          <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>El Bosque</span>
+        </div>
+        <div style="margin-top:28px">
+          <a href="https://wa.me/56912345678?text=Hola%2C%20quiero%20consultar%20cobertura%20en%20mi%20zona." target="_blank" rel="noopener" class="btn btn-navy">¿Otra comuna? Consúltanos</a>
+        </div>
+      </div>
+      <div class="coverage-map reveal">
+        <!-- Reemplazar con iframe de Google Maps real -->
+        <div class="coverage-map-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Integrar Google Maps aquí</span>
+          <span style="font-size:0.75rem;opacity:0.6">San Bernardo, RM, Chile</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ TESTIMONIOS ════════════════ -->
+<section class="section-pad" id="testimonios">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Testimonios</div>
+      <h2 class="section-title">Lo que dicen las familias que acompañamos</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal reveal-d1">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">Nos atendieron con mucho respeto y dedicación en un momento muy difícil. Agradecida por su apoyo y profesionalismo.</p>
+        <div class="testimonial-author">María González</div>
+        <div class="testimonial-loc">San Bernardo</div>
+      </div>
+      <div class="testimonial-card reveal reveal-d2">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">Respondieron de inmediato y se encargaron de todo. La familia pudo estar tranquila gracias a su acompañamiento.</p>
+        <div class="testimonial-author">Carlos Muñoz</div>
+        <div class="testimonial-loc">Buin</div>
+      </div>
+      <div class="testimonial-card reveal reveal-d3">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="testimonial-text">Muy agradecida por la orientación y contención. Nos guiaron paso a paso y siempre con mucha humanidad.</p>
+        <div class="testimonial-author">Patricia Soto</div>
+        <div class="testimonial-loc">Calera de Tango</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ NOSOTROS ════════════════ -->
+<section class="section-pad bg-alt" id="nosotros">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-visual-text">Funeraria<br>Misión Sagrada</div>
+      </div>
+      <div class="reveal">
+        <div class="section-label">Nuestra Misión</div>
+        <h2 class="section-title">Nacimos para acompañar a las familias</h2>
+        <div class="about-body">
+          <p>Funeraria Misión Sagrada nació en San Bernardo con una profunda vocación de servicio social. Entendemos que el fallecimiento de un ser querido es uno de los momentos más difíciles que una familia puede enfrentar, y por eso existimos: para orientar, acompañar y facilitar cada paso del proceso funerario.</p>
+          <p>Nuestro compromiso es brindar un servicio humano, transparente y profesional, donde cada familia reciba la atención y el cuidado que merece. No somos solo una funeraria; somos un equipo de personas que entiende tu dolor y está preparado para ayudarte.</p>
+        </div>
+        <a href="#contacto" class="btn btn-outline" style="margin-top:8px">Conócenos más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FAQ ════════════════ -->
+<section class="section-pad" id="faq">
+  <div class="container" style="text-align:center">
+    <div class="reveal">
+      <div class="section-label">Preguntas frecuentes</div>
+      <h2 class="section-title">Resolvemos tus dudas</h2>
+      <p class="section-desc" style="margin:0 auto">Estas son las consultas más habituales de las familias que nos contactan.</p>
+    </div>
+    <div class="faq-wrapper" style="text-align:left">
+
+      <div class="faq-item reveal">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>¿Qué debo hacer si un familiar acaba de fallecer?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><p>Lo primero es comunicarte con nosotros. Nuestro equipo te orientará sobre los pasos a seguir y coordinará el traslado y todos los servicios necesarios. Estamos disponibles las 24 horas.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>¿Qué documentos necesito?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><p>Generalmente necesitarás la cédula de identidad del fallecido(a) y el certificado médico de defunción. Si no los tienes disponibles, te ayudamos a gestionarlos.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>¿Atienden fuera de San Bernardo?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><p>Sí. Además de San Bernardo, cubrimos Buin, Paine, Calera de Tango y otras comunas cercanas. Contáctanos y confirmamos cobertura en tu zona.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>¿El servicio incluye traslado?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><p>Sí. Nuestro servicio incluye el traslado del fallecido(a) desde el lugar del fallecimiento al velatorio y al cementerio o crematorio.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>¿Ofrecen servicio de cremación?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><p>Coordinamos el servicio de cremación con crematorios de la zona, gestionando todo el proceso para que la familia no deba preocuparse.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>¿Tienen disponibilidad inmediata?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><p>Sí. Atendemos las 24 horas del día, los 7 días de la semana, incluyendo fines de semana y festivos.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-btn" onclick="toggleFaq(this)">
+          <span>¿Cuánto cuesta el servicio funerario?</span>
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer"><p>El costo varía según el tipo de servicio y las necesidades de cada familia. Contáctanos para una orientación personalizada y sin compromiso.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CONTACTO ════════════════ -->
+<section class="section-pad bg-alt" id="contacto">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Contacto</div>
+      <h2 class="section-title">¿Necesitas ayuda? Estamos disponibles ahora.</h2>
+      <p class="section-desc">Llámanos, escríbenos o completa el formulario. Respondemos de inmediato.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal" id="contactForm">
+        <div class="form-group">
+          <label class="form-label" for="nombre">Nombre completo</label>
+          <input class="form-input" type="text" id="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="telefono">Teléfono de contacto</label>
+          <input class="form-input" type="tel" id="telefono" placeholder="+56 9 1234 5678" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="tipo">Tipo de consulta</label>
+          <select class="form-select" id="tipo">
+            <option value="">Selecciona una opción</option>
+            <option value="inmediata">Necesidad inmediata</option>
+            <option value="consulta">Consulta general</option>
+            <option value="cotizacion">Cotización</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mensaje">Mensaje (opcional)</label>
+          <textarea class="form-textarea" id="mensaje" placeholder="¿En qué podemos ayudarte?"></textarea>
+        </div>
+        <button class="btn btn-gold" style="width:100%;justify-content:center" onclick="submitForm()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Enviar consulta
+        </button>
+        <p class="form-note">Si es urgente, te recomendamos llamarnos directamente.</p>
+      </div>
+
+      <div class="contact-info reveal">
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label-text">Teléfono</div>
+            <div class="contact-value"><a href="tel:+56912345678">+56 9 1234 5678</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          </div>
+          <div>
+            <div class="contact-label-text">WhatsApp</div>
+            <div class="contact-value"><a href="https://wa.me/56912345678" target="_blank" rel="noopener">+56 9 1234 5678</a></div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-label-text">Dirección</div>
+            <div class="contact-value">San Bernardo, Región Metropolitana, Chile</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="contact-label-text">Horario de atención</div>
+            <div class="contact-value">24 horas, los 365 días del año</div>
+          </div>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+          <a href="tel:+56912345678" class="btn btn-navy" style="flex:1;justify-content:center;min-width:140px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Llamar
+          </a>
+          <a href="https://wa.me/56912345678" target="_blank" rel="noopener" class="btn btn-wa" style="flex:1;justify-content:center;min-width:140px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CTA BANNER ════════════════ -->
+<section class="cta-banner">
+  <div class="container reveal">
+    <h2>¿Necesitas atención inmediata?</h2>
+    <p>Estamos disponibles ahora para orientarte y acompañarte en todo el proceso.</p>
+    <div class="cta-banner-buttons">
+      <a href="tel:+56912345678" class="btn btn-gold">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Llámanos ahora
+      </a>
+      <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20orientaci%C3%B3n%20sobre%20servicios%20funerarios." target="_blank" rel="noopener" class="btn btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        Escríbenos por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Misión <em>Sagrada</em></div>
+        <p class="footer-desc">Acompañamos a tu familia con respeto y dedicación. Servicios funerarios en San Bernardo y comunas aledañas, disponibles las 24 horas.</p>
+      </div>
+      <div>
+        <div class="footer-title">Navegación</div>
+        <a href="#inicio" class="footer-link">Inicio</a>
+        <a href="#servicios" class="footer-link">Servicios</a>
+        <a href="#pasos" class="footer-link">Qué hacer</a>
+        <a href="#nosotros" class="footer-link">Nosotros</a>
+        <a href="#faq" class="footer-link">Preguntas frecuentes</a>
+        <a href="#contacto" class="footer-link">Contacto</a>
+      </div>
+      <div>
+        <div class="footer-title">Servicios</div>
+        <a href="#servicios" class="footer-link">Traslado</a>
+        <a href="#servicios" class="footer-link">Velatorio</a>
+        <a href="#servicios" class="footer-link">Trámites legales</a>
+        <a href="#servicios" class="footer-link">Cremación</a>
+        <a href="#servicios" class="footer-link">Acompañamiento</a>
+      </div>
+      <div>
+        <div class="footer-title">Contacto</div>
+        <a href="tel:+56912345678" class="footer-link">+56 9 1234 5678</a>
+        <a href="https://wa.me/56912345678" class="footer-link" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="footer-link">San Bernardo, RM, Chile</span>
+        <span class="footer-link">Atención 24/7</span>
+      </div>
+    </div>
+    <div class="footer-bar">
+      Funeraria Misión Sagrada &copy; 2026 &middot; San Bernardo, Región Metropolitana, Chile
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════ MOBILE FLOATING BAR ════════════════ -->
+<div class="mobile-bar" id="mobileBar">
+  <a href="tel:+56912345678" class="mb-call">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Llamar
+  </a>
+  <a href="https://wa.me/56912345678?text=Hola%2C%20necesito%20orientaci%C3%B3n%20sobre%20servicios%20funerarios." target="_blank" rel="noopener" class="mb-wa">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<!-- ════════════════ JAVASCRIPT ════════════════ -->
+<script>
+// ── Header scroll effect ──
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ── Mobile menu ──
+const menuBtn = document.getElementById('menuBtn');
+const mobileNav = document.getElementById('mobileNav');
+const mobileClose = document.getElementById('mobileClose');
+menuBtn.addEventListener('click', () => mobileNav.classList.add('open'));
+mobileClose.addEventListener('click', () => mobileNav.classList.remove('open'));
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+  link.addEventListener('click', () => mobileNav.classList.remove('open'));
+});
+
+// ── FAQ accordion ──
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const wasOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+  // Toggle clicked
+  if (!wasOpen) item.classList.add('open');
+}
+
+// ── Form submit ──
+function submitForm() {
+  const form = document.getElementById('contactForm');
+  const nombre = document.getElementById('nombre').value.trim();
+  const telefono = document.getElementById('telefono').value.trim();
+  if (!nombre || !telefono) {
+    alert('Por favor completa al menos tu nombre y teléfono.');
+    return;
+  }
+  form.innerHTML = '<div class="form-success">Recibimos tu consulta. Te contactaremos a la brevedad.</div>';
+}
+
+// ── Scroll reveal (IntersectionObserver) ──
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+revealEls.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
